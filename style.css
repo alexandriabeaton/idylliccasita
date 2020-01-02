@@ -1,0 +1,265 @@
+body {
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	font-family: 'Manjari', sans-serif;
+}
+
+/*containers for landing page, blog posts, and sub pgs*/
+.container {
+	width: 100vw;
+	text-align: center;
+	position: relative;
+	background-color: white;
+	padding-bottom: 2rem;
+	padding-top: 1rem;
+}
+
+.sub-pg-container {
+	margin-top: 10rem;
+	width: 80%;
+}
+
+.blogContainer{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding-bottom: 4rem; 
+}
+
+/*NAVBAR*/
+.navbar {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: rgb(48, 48, 48);
+	font-weight: bold;
+	width: 100%;
+    letter-spacing: .15em;
+    line-height: 1.6;   
+	font-size: 1rem;
+    margin-top: 0px;
+    padding-right: 2rem;
+    position: fixed;
+	top: 0;
+	z-index: 9999;
+	height: auto !important;
+}
+
+
+/*for brand image to appear on nav during scroll*/
+.header-logo {
+	display: none;
+}
+
+.nav-link:hover, .navbar li a:hover {
+	border-bottom: 1px solid rgb(48, 48, 48);
+	color: rgb(48, 48, 48);
+}
+
+.navbar li {
+	margin-left: 20px;
+	padding-left: 5px;
+	color: rgb(48, 48, 48);
+	justify-content: top;
+}
+
+.navbar li a {
+      color: rgb(48, 48, 48) !important;
+      background-color: transparent;
+      line-height: 1.42857143 !important;
+      display: flex;
+  }
+
+.navbar-brand {
+	margin-left: 10px;
+}
+
+.social-media-btn {
+	margin: 5px;
+	padding: 5px;
+	background: transparent;
+	color: rgb(48, 48, 48);
+	border: 0px;
+}
+
+.navbar-toggler-icon span {
+	background-color: rgb(48, 48, 48);
+}
+
+/*LANDING JUMBOTRON*/
+.jumbotron{
+	height: 100vh;
+	width: 100vw;
+	border-radius: 0%;
+	padding-bottom: 0px;
+	margin-bottom: 0px !important;
+}
+
+
+.bg-cover {
+  background-image: url(https://i.imgur.com/sUUsqF4.png);
+  background-size: cover;
+  height: 100vh;
+	width: 100vw;
+  color: black;
+  background-position: center center;
+}
+
+.about-cover {
+	background-image: url("https://i.imgur.com/TIeIcKN.png");
+}
+
+.jumbotron h1 {
+	letter-spacing: .275em;
+	color: rgb(48, 48, 48);
+	padding: 200px;
+	font-size:	4rem;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	opacity: 0;
+	transition: 3000ms opacity;
+}
+
+.jumbotron h1:hover {
+	text-shadow: rgb(255, 255, 255) 20px 0 20px;
+	color: rgb(48, 48, 48);
+}
+
+
+/*CATEGORIES SECTION*/
+.categ-row{
+	justify-content: center;
+}
+
+.row .col-lg-3 img {
+	width: 300px;
+	max-width: 95%;
+	padding: 5px;
+	margin: 1px;
+}
+
+.row .col-md-6 img {
+	width: 500px;
+	max-width: 100%;
+	padding: 0px;
+	padding-top: 1rem;
+	margin: 1rem;
+}
+
+.row .col-md-6 img:hover{
+	opacity: 0.7;
+}
+
+.img {
+	position: relative;
+	float: center;
+	justify-content: center;
+	height: auto;
+}
+
+.categ-banners {
+	position: absolute;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	background-color: rgb(221,221,221);
+	color: rgb(48, 48, 48);
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	padding-left: auto;
+	padding-top: 20px;
+	left: 20%;
+	bottom: -5%;
+	width: 60%;
+	height: 20%;
+}
+
+.categ-banners:hover {
+	border: 1px solid rgb(48, 48, 48);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/*ABOUT ME CONTAINER*/
+
+
+
+/*RECENT BLOG POSTS SECTION*/
+.content-hdgs, .sub-pg-hdgs {
+	text-transform: uppercase;
+	font-family: 'Crimson Text', serif;
+	font-size: 2rem;
+	letter-spacing: 0.10em;
+	text-align: center;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.sub-pg-hdgs {
+	font-size: 2rem;
+}
+
+.blog-col{
+	border: 1px solid rgb(233, 233, 233);
+}
+
+
+.blog-title{
+	text-transform: uppercase;
+	font-family: 'Manjari', sans-serif;
+	margin-top: 1rem;
+	font-size: 1rem;
+	letter-spacing: .10em;
+	text-align: center;
+	justify-content: center;
+	font-weight: bold;
+	color: rgb(48, 48, 48);
+}
+
+.blog-descript {
+	margin-top: 1rem;
+	font-size: 0.8rem;
+	color: rgb(48, 48, 48);
+}
+
+/*replace in html5*/
+hr {
+	width: 40%;
+	color: rgb(193, 204, 197);
+	justify-content: left;
+}
+
+
+.blogs{
+	justify-content: center;
+}
+
+
+/* BLOG TEMPLATE CSS */
+.blogTemplateMainHdg {
+	text-align: center;
+}
+
+
+/*BOTTOM CONTACT SECTION*/
+.bottomBanner{
+	background-color: rgb(193, 204, 197);
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.contactHeading {
+	text-transform: uppercase;
+	font-family: 'Manjari', sans-serif;
+	font-size: 0.75rem;
+	letter-spacing: 0.5px;
+	text-align: center;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.row-full {
+	width: 100vw;
+	position: relative;
+	height: 80%;
+	top: 10%;
+}
